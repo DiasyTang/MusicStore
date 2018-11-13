@@ -19,7 +19,7 @@ namespace MusicStore.Test
         }
 
         [Fact]
-        public async void ComputesTotal()
+        public async Task ComputesTotal()
         {
             var cartId = Guid.NewGuid().ToString();
             using (var db = _fixture.CreateContext())
